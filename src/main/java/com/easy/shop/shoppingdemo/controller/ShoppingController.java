@@ -19,4 +19,15 @@ public class ShoppingController {
 		return map;
 	}
 
+  @GetMapping("/products")
+  public List<String> getProducts(){
+    ArrayList<String> al = new ArrayList<>();
+    al.add("Refrdigerator");
+    al.add("Phone");
+    al.add("Television");
+    al.add("Laptop");
+    al.add("ipad");
+    return al;
+  }
+
 }
